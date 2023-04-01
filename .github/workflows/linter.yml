@@ -1,6 +1,6 @@
 name: 'Lint Code'
 
-on: workflow_dispatch:
+on:
   push:
     branches: [master, main]
   pull_request:
@@ -63,4 +63,3 @@ jobs: # list of things to do
       - name: Lint with Pylint
         run: pylint *.py
         working-directory: server
-
